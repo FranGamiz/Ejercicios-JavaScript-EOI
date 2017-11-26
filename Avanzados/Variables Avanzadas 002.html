@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios</title>
+</head>
+
+<body>
+	
+	<script>
+		function myFunction(){
+			var nombre = document.getElementById("nombre").value;
+			var apellido = document.getElementById("apellido").value;
+			
+			var x = "Su nombre es" + " " + nombre + " " + apellido;
+			
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+
+	<label type="text">Nombre: </label>
+	<input type="text" id="nombre"><br>
+	<label type="text">Apellidos: </label>
+	<input type="text" id="apellido"><br>
+	<br>
+
+	<button type="button" onclick="myFunction()">Enviar</button>
+	<p id="demo"></p>
+
+</body>
