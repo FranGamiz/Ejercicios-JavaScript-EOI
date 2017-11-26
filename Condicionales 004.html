@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios</title>
+</head>
+
+<body>
+	<input type="text" id="nota"/>
+	<button onclick="myFunction()">Pulsa</button>
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var nota = document.getElementById("nota").value;
+			var mensaje;
+			if (nota < 5) {
+				mensaje = "Suspendido";
+			} else if (nota < 7){
+				mensaje = "Aprobado";
+			} else if (nota < 9){
+				mensaje = "Notable";
+			} else if (nota < 10){
+				mensaje = "Sobresaliente";
+			} else if (nota > 10){
+				mensaje = "Nota invalida";
+			}else {
+				mensaje = "Matricula de Honor";
+			}
+			document.getElementById("demo").innerHTML = mensaje;
+		}
+	</script>
+	
+</body>

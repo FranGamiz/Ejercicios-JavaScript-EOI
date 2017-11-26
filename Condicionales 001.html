@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios</title>
+</head>
+
+<body>
+	<input type="text" id="hora"/>
+	<button onclick="myFunction()">Pulsa</button>
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var hora = document.getElementById("hora").value;
+			var saludo;
+			if (hora < 13) {
+				saludo = "Buenos días";
+			} else if (hora > 23){
+				saludo = "Hora no válida";
+			}else {
+				saludo = "Buenos tardes";
+			}
+			document.getElementById("demo").innerHTML = saludo;
+		}
+	</script>
+	
+</body>

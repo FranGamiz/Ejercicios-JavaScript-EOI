@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios</title>
+</head>
+
+<body>
+	<input type="text" id="nota"/>
+	<button onclick="myFunction()">Pulsa</button>
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var nota = document.getElementById("nota").value;
+			var mensaje;
+			if (nota < 5) {
+				mensaje = "Suspendido";
+			} else if (nota > 10){
+				mensaje = "Nota no válida";
+			}else {
+				mensaje = "Aprobado";
+			}
+			document.getElementById("demo").innerHTML = mensaje;
+		}
+	</script>
+	
+</body>
