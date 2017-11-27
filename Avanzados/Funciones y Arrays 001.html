@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>ejercicios</title>
+</head>
+
+<body>
+	
+<script>
+	function ordenar() {
+		var numero1 = document.getElementById("numero1").value
+		var numero2 = document.getElementById("numero2").value
+		var numero3 = document.getElementById("numero3").value
+
+		document.getElementById("demo").innerHTML = ([numero1, numero2, numero3].sort(function (a,b){
+		return a - b;
+		}));
+	}
+</script>
+
+
+	<input type="text" id="numero1"><br>
+	<input type="text" id="numero2"><br>
+	<input type="text" id="numero3"><br><br>
+	<button onclick="ordenar()">Ordenar</button>
+	<p id="demo"></p>
+
+</body>
