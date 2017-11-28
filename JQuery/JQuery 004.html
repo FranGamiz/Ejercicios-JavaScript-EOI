@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo de tablas simples con Bootstrap</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// Escondemos el párrafo
+		$(".uno").click(function(){
+			$("a[target='_blank']").hide();
+		});
+		$(".dos").click(function() {
+			$("#dos").hide();
+		});
+	});
+	</script>
+</head>
+<body>
+    <button type="button" class="uno">Esconder Enlace 1</button>
+    <button type="button" class="dos">Esconder Enlace 2</button>
+	<br><br>
+	<a href="https://www.w3big.com" target="_blank" id="uno">Enlace 1</a>
+	<a href="https://www.w3big.com" id="dos">Enlace 2</a>
+</body>
+</html>                        
